@@ -1,0 +1,29 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>consumer</servlet-name>
+        <servlet-class>controller.ConsumerController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>consumer</servlet-name>
+        <url-pattern>/consumer.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>provider</servlet-name>
+        <servlet-class>controller.ProviderController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>provider</servlet-name>
+        <url-pattern>/provider.do</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
